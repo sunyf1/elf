@@ -1,0 +1,31 @@
+{
+  "name": "elf",
+  "version": "0.0.1",
+  "description": "Extract current page url parameter, and then as new parameter to another url.",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://fex.staff.ifeng.com/chrome/elf.git"
+  },
+  "keywords": [
+    "chrome",
+    "regularexpression",
+    "gulp"
+  ],
+  "author": "s@ifeng.com",
+  "license": "MIT",
+  "dependencies": {
+    "crx": "^3.0.3",
+    "gulp": "^3.9.1",
+    "gulp-crx-pack": "^1.0.1",
+    "gulp-file": "^0.2.0",
+    "gulp-rev": "^7.0.0",
+    "gulp-useref": "^3.0.7",
+    "gulp-useref-plus": "0.0.8",
+    "gulp-zip": "^3.1.0",
+    "pem": "^1.8.1"
+  }
+}

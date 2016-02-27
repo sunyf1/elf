@@ -1,0 +1,30 @@
+{
+  "name": "elf",
+  "description": "Extract current page url parameter, and then as new parameter to another url.",
+  "main": "gulpfile.js",
+  "authors": [
+    "s@ifeng.com"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "chrome",
+    "regexp",
+    "gulp"
+  ],
+  "moduleType": [
+    "es6"
+  ],
+  "homepage": "http://zhso.net/",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.6",
+    "jquery-load-template": "1.4.5",
+    "font-awesome": "fontawesome#^4.5.0"
+  }
+}

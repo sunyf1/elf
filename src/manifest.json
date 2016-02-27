@@ -1,0 +1,25 @@
+{
+  "author": "s@zhso.net",
+  "background": {
+    "scripts": [
+      "js/eventPage.js"
+    ]
+  },
+  "description": "Extract current page url parameter, and then as new parameter to another url.",
+  "icons": {
+    "16": "images/128x128.png",
+    "48": "images/128x128.png",
+    "128": "images/128x128.png"
+  },
+  "options_page": "options.html",
+  "manifest_version": 2,
+  "name": "Elf",
+  "permissions": [
+    "background",
+    "contextMenus",
+    "http://*/*",
+    "tabs",
+    "storage"
+  ],
+  "version": "0.0.2"
+}

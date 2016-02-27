@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Rules</title>
+    <!-- build:css css/options.css -->
+    <link href="../bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../bower_components/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <!-- endbuild -->
+</head>
+<body>
+<table class="table table-condensed table-hover">
+    <thead>
+    <tr>
+        <th class="col-md-1">Menu</th>
+        <th class="col-md-5">Match</th>
+        <th class="col-md-5">Target</th>
+        <th class="col-md-1"></th>
+    </tr>
+    </thead>
+    <tbody id="container">
+    </tbody>
+    <tfoot>
+    <tr>
+        <td class="has-error"><input type="text" class="form-control input-sm" placeholder="Menu"></td>
+        <td class="has-error"><input type="text" class="form-control input-sm" placeholder="Match expression"></td>
+        <td colspan="2" class="has-error"><input type="text" class="form-control input-sm"
+                                                 placeholder="Target expression">
+        </td>
+    </tr>
+    <tr>
+        <td colspan="4">
+            <div class="input-group input-group-lg col-md-12">
+                <input id="txtConfig" type="text" class="form-control" placeholder="">
+                <span class="input-group-btn">
+                    <button class="btn btn-info"><i id="btnLoad" class="fa fa-cloud-download"></i></button>
+                    <button id="btnClear" class="btn btn-info fa fa-trash-o"></button>
+                </span>
+            </div>
+        </td>
+    </tr>
+    </tfoot>
+</table>
+<script type="text/html" id="label">
+    <tr>
+        <td class="menu" data-content-text="menu"></td>
+        <td class="match" data-content-text="match"></td>
+        <td class="target" data-content-text="target"></td>
+        <td><span class="fa fa-times fa-lg pull-right text-danger"></span></td>
+    </tr>
+</script>
+<script type="text/html" id="input">
+    <td class="menu"><input type="text" class="form-control input-sm" data-value="menu"></td>
+    <td class="match"><input type="text" class="form-control input-sm" data-value="match"></td>
+    <td class="target"><input type="text" class="form-control input-sm" data-value="target"></td>
+    <td><span class="fa fa-times fa-lg pull-right text-danger"></span></td>
+</script>
+<script type="text/html" id="label-item">
+    <td class="menu" data-content-text="menu"></td>
+    <td class="match" data-content-text="match"></td>
+    <td class="target" data-content-text="target"></td>
+    <td class="no-edit-area"><span class="fa fa-times fa-lg pull-right text-danger"></span></td>
+</script>
+<!-- build:js js/options.js -->
+<script src="../bower_components/jquery/dist/jquery.min.js"></script>
+<script src="../bower_components/jquery-load-template/jquery-loadTemplate/jquery.loadTemplate-1.4.5.min.js"></script>
+<script src="js/options.js"></script>
+<!-- endbuild -->
+</body>
+</html>
